@@ -1,5 +1,8 @@
 tempp = 0
 
+def on_every_interval():
+    basic.show_string("Nah!")
+loops.every_interval(60000, on_every_interval)
 
 def on_forever():
     global tempp
@@ -33,7 +36,3 @@ def on_forever3():
     else:
         pass
 basic.forever(on_forever3)
-
-def on_every_interval():
-    basic.show_string("Nah!")
-loops.every_interval(1000, on_every_interval)

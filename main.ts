@@ -1,4 +1,7 @@
 let tempp = 0
+loops.everyInterval(60000, function on_every_interval() {
+    basic.showString("Nah!")
+})
 basic.forever(function on_forever() {
     
     tempp = 30
@@ -29,7 +32,4 @@ basic.forever(function on_forever3() {
         
     }
     
-})
-loops.everyInterval(1000, function on_every_interval() {
-    basic.showString("Nah!")
 })
